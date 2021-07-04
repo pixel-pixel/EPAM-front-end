@@ -1,0 +1,33 @@
+#form_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 25px;
+    font-size: 20px;
+    width: 50%;
+    background-color: cornflowerblue;
+}
+p{
+    line-height: 0.5;
+    margin: 15px 0;
+}
+.inp{
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    border: none;
+    color: black;
+}
+#conf,
+#conv{
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    margin: 20px 0;
+    border: none;
+    color: white;
+    background-color: black;
+}

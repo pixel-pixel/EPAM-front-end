@@ -1,0 +1,255 @@
+*{
+  font-family: Open Sans, Serif;
+}
+/*---Header--*/
+header, main{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.header-container{
+  display: block;
+  background: url("../img/apples.jpg") no-repeat center top;
+  height: 740px;
+  color: white;
+}
+.name_of{
+  display: flex;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  font-size: 22px;
+  color: white;
+}
+.name_of p{
+  padding: 15px;
+  margin: 25px;
+}
+.center_title {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 0.8;
+}
+.center_title span{
+  font-size: 60px;
+}
+.center_title p{
+  font-size: 18px;
+}
+.center_title span:nth-child(2){
+  font-size: 80px ;
+}
+.container{
+  display: flex;
+  float: right;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+.container span{
+  padding: 10px;
+  margin: 25px;
+}
+.container span a{
+  text-decoration: none;
+  color: white;
+}
+.button{
+  position: absolute;
+  display: flex;
+  bottom: -10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.btn{
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  opacity: 60%;
+  border: 2px white solid;
+  padding: 20px;
+  width: 300px;
+}
+/*---main---*/
+.info-wrapper{
+  display: flex;
+  line-height: 1;
+  padding: 50px 10px;
+  margin: 20px;
+}
+.info{
+  display: inline-block;
+  padding:20px;
+  margin: 20px;
+}
+.info:nth-child(1){
+  font-size: 20px;
+  width: 40%;
+}
+.info:nth-child(2){
+  font-size: 16px;
+  width:60%;
+}
+.content{
+  display: block;
+  background-color:#F0F0F0 ;
+}
+.content p{
+  text-align: center;
+  font-size: 18px;
+  padding: 100px 0 30px;
+}
+.content_block{
+  display: block;
+  padding: 30px 20px 20px;
+}
+.section{
+  display: inline-flex;
+  margin: 10px 25px;
+}
+.picture_block-wrapper{
+  display: inline-block;
+  width: 770px;
+  height: 300px;
+  color: white;
+  background-size: cover;
+  text-align: center;
+}
+.icon{
+  float:right;
+  padding: 15px;
+}
+.top_img{
+  color: white;
+  border: 2px white solid;
+  background-color: grey;
+  padding: 5px;
+  width: 55px;
+}
+.txt{
+  display: table-cell;
+  vertical-align: bottom;
+  height: 300px;
+  padding:0 0 50px 15px;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.text_block-wrapper{
+  display: inline-flex;
+  text-align: center;
+  width: 400px;
+  padding: 100px 15px;
+  font-size: 16px;
+
+}
+.picture_block-wrapper:nth-child(1){
+  background: url("../img/sample.jpg") center;
+}
+.picture_block-wrapper:nth-child(2){
+  background: url("../img/sample1.jpg") center;
+}
+.picture_block-wrapper:nth-child(3){
+  background: url("../img/sample.jpg")  center;
+}
+.picture_block-wrapper:nth-child(4){
+  background: url("../img/sample1.jpg") center;
+}
+.subscribe_wind{
+  display: inline-block;
+  margin: 30px;
+  padding: 45px;
+  background-color: white;
+  font-size: 22px;
+  text-align: center;
+}
+.subscribe_wind label{
+  margin-right: 20px;
+}
+.subscribe_wind input:nth-child(2){
+  width: 600px;
+  height: 45px;
+  border: 1px black solid;
+  margin-right: 0;
+  padding-left: 20px;
+  background-color: #F0F0F0;
+}
+.subscribe_wind input:nth-child(3){
+  height: 50px;
+  background-color: black;
+  color: white;
+  width: 140px;
+  margin-left: 0;
+  border:none;
+}
+/*---Footer---*/
+.footer_content{
+  display: block;
+  width: 100%;
+}
+.footer__content{
+  display: block;
+  width: 100%;
+  padding: 40px 60px;
+}
+.footer_info{
+  display: inline-block;
+  margin: 15px;
+  width: 250px;
+}
+.footer_info p{
+  color: grey;
+}
+.footer_info input:nth-child(1){
+  width: 140px;
+  height: 25px;
+  border: 1px black solid;
+  background-color: #F0F0F0;
+  font-size: 12px;
+  margin-left: 2px;
+}
+.footer_info input:nth-child(2){
+  height: 25px;
+  background-color: black;
+  color: white;
+  width: 80px;
+  border:none;
+  font-size: 12px;
+}
+.footer_info:nth-child(2) p:nth-child(3){
+  color: lightgray;
+}
+.footer_info:nth-child(3) p{
+  line-height: 1;
+}
+hr{
+  color: lightgrey;
+  margin: 40px 0 10px 0;
+}
+.footer_container{
+  display: block;
+  margin: 20px 20px;
+}
+.inform{
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.nav_menu{
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+}
+.nav_menu a{
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}

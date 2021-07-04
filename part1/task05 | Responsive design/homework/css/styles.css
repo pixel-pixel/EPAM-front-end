@@ -1,0 +1,354 @@
+/*
+* Colors used in design.
+*   primary: #0078aa;
+*   dark: #363636;
+*   light: #fff;
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  --main-pad: 10%;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+.title{
+  font-size: 40px;
+}
+.piple {
+  font-weight: lighter;
+  font-size: 17px;
+  margin-top: 8px;
+}
+.small-title{
+  margin: 15px 0 5px;
+  font-size: 17px;
+}
+
+.btn-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+}
+.btn-up a {
+  color: white;
+  text-decoration: none;
+}
+.btn-up a:hover {
+  color: #0078aa;
+}
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  background-color: #0078aa;
+  border-radius: 50%;
+  border: none;
+}
+.circle-btn:hover {
+  color: #0078aa;
+  background-color: white;
+  border: #0078aa solid 2px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px var(--main-pad);
+  background: #fff;
+}
+header a {
+  margin: 10px;
+  color: #363636;
+  font-weight: bold;
+  text-decoration: none;
+}
+header a:hover {
+  color: #0078aa;
+}
+
+.health {
+  padding: 240px var(--main-pad);
+  background: url("../img/header_bg.jpg") center no-repeat;
+}
+.health .title {
+  width: 500px;
+  font-size: 40px;
+}
+.health .text {
+  width: 450px;
+  margin: 20px 0;
+  color: #363636;
+}
+.health .btn-medic {
+  margin: 0 20px;
+}
+
+.about {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.about span {
+  color: #0078aa;
+}
+.about img {
+  width: 50%;
+}
+.about .section-container {
+  width: 450px;
+  padding-left: 30px;
+}
+.about .piple {
+  margin: 5px 0;
+  color: #0078aa;
+}
+
+.about .small-text {
+  margin-bottom: 15px;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: url("../img/services_bg.jpg") center no-repeat;
+  background-size: cover;
+}
+.help .article-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 20px 0;
+}
+.help article {
+  width: 350px;
+  padding: 30px;
+  background: white;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/pricing_bg.jpg") center no-repeat;
+  background-size: cover;
+}
+.offers .title {
+  padding-top: 100px;
+}
+.offers .article-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.offers article {
+  width: 420px;
+  height: 550px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: #0078aa;
+}
+.offers article:nth-child(2n) {
+  padding: 60px 0;
+  color: #0078aa;
+  background-color: white;
+  border: #0078aa solid 2px;
+}
+.offers article .check-name {
+  font-size: 25px;
+}
+.offers article .check-price {
+  font-size: 60px;
+  font-weight: bold;
+}
+.offers article .check-treat {
+  font-style: italic;
+  padding-bottom: 15px;
+}
+.offers article .btn-get {
+  width: 130px;
+  height: 50px;
+  color: #0078aa;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: #0078aa solid 2px;
+  border-radius: 15px;
+}
+.offers article .btn-get:hover {
+  color: white;
+  background-color: #0078aa;
+  border: white solid 2px;
+}
+
+.contact {
+  display: flex;
+  justify-content: left;
+}
+.contact img {
+  width: 50%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.contact .content-wrap {
+  width: 50%;
+  padding: 70px 30px 0;
+}
+
+.contact form {
+  padding: 20px 0;
+}
+.contact input {
+  width: 100%;
+  height: 20px;
+  margin: 10px 0;
+  padding: 10px;
+
+  color: #363636;
+  font-style: italic;
+
+  border: none;
+  border-bottom: lightgrey solid 1px;
+}
+.contact input[type="submit"] {
+  width: 130px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0078aa;
+  border: none;
+  border-radius: 15px;
+}
+.contact input[type="submit"]:hover {
+  color: #0078aa;
+  background-color: white;
+  border: #0078aa solid 2px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #363636;
+  color: white;
+}
+
+@media only screen and (min-width: 1280px){
+  * {
+    --main-pad: 10%;
+  }
+
+  .help article {
+    width: 340px;
+  }
+
+  .offers article {
+    width: 420px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px){
+  * {
+    --main-pad: 20px;
+  }
+
+  .health .title {
+    width: 50%;
+  }
+
+  .help article {
+    width: 170px;
+  }
+
+  .offers article {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    --main-pad: 10px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+  header a {
+    margin: 5px;
+  }
+
+  .health {
+    text-align: center;
+  }
+
+  .health .title {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .health .text {
+    width: 100%;
+  }
+  .about {
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .about .section-container {
+    width: 95%;
+    text-align: center;
+    padding: 0;
+  }
+  .contact {
+   flex-direction: column;
+  }
+  .contact img {
+    width: 100%;
+  }
+  .contact .content-wrap {
+    width: 85%;
+    text-align: center;
+  }
+  .help {
+    text-align: center;
+  }
+  .help .article-wrap {
+    grid-template-columns: 1fr;
+  }
+  .help article {
+    text-align: left;
+  }
+  .offers .article-wrap {
+    flex-direction: column;
+  }
+  .offers article {
+    margin-bottom: 15px;
+  }
+}
+
+

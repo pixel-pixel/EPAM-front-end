@@ -1,0 +1,136 @@
+body {
+    color: white;
+    background-color: #64b5f6;
+
+    font-family: 'Helvetica ', ' Arial ', sans-serif;
+}
+
+#root {
+    width: 400px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#navigationButtons {
+    padding: 25vh 0;
+}
+
+.addTweet {
+    width: 200px;
+    height: 50px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+
+    background-color: #f06292;
+    border: white 3px solid;
+    border-radius: 7px;
+}
+
+#modifyItemInput {
+    width: 362px;
+    height: 120px;
+    padding: 10px;
+
+    color: #212121;
+    font-size: 18px;
+    font-weight: bolder;
+
+    background-color: white;
+    border: #e0e0e0 4px solid;
+    border-radius: 7px;
+
+    resize: none;
+}
+
+#modifyItemInput:focus {
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.formButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#cancelModification {
+    width: 200px;
+    height: 50px;
+    margin: 0 5px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+
+    background-color: #f06292;
+    border: white 3px solid;
+    border-radius: 7px;
+}
+
+#saveModifiedItem {
+    width: 200px;
+    height: 50px;
+    margin: 0 5px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+
+    background-color: #66bb6a;
+    border: white 3px solid;
+    border-radius: 7px;
+}
+
+.tweet {
+    padding: 15px;
+    margin: 15px 0;
+
+    color: #212121;
+    text-align: left;
+
+    background-color: white;
+    border: #e0e0e0 solid 3px;
+    border-radius: 14px;
+}
+.tweet header {
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.tweet header img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+
+    border-radius: 50%;
+}
+.tweet footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.tweet footer img {
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+}
+.tweet footer img:hover {
+    background-color: lightgrey;
+}
+.tweet p {
+    margin: 15px 0;
+
+    font-size: 18px;
+    overflow-wrap: anywhere;
+}
+

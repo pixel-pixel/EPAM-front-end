@@ -1,0 +1,35 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dsgn-bg-black {
+    background-color: #111;
+}
+
+.dsgn-fnt-black {
+    color: #111;
+}
+
+.dsgn-bg-gray {
+    background-color: #525252;
+}
+
+.dsgn-fnt-gray {
+    color: #525252;
+}
+
+.dsgn-bg-coral {
+    background-color: coral;
+}
+
+.dsgn-fnt-coral {
+    color: coral;
+}
+
+.dsgn-bg-coral-l {
+    background-color: lightcoral;
+}
+
+.dsgn-fnt-coral-l {
+    color: lightcoral;
+}

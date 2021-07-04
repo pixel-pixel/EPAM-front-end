@@ -1,0 +1,183 @@
+:root {
+    --lightblue: #87CEFA;
+    --lightgrey: #F5F5F5;
+}
+
+.flex-2-col:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Task 2*/
+.tm-box-bg-title:hover {
+    color: white;
+    font-weight: bold;
+    background-color: var(--lightblue);
+}
+
+/*Task 3*/
+p::first-letter {
+    color: var(--lightblue);
+    font-size: 30px;
+}
+
+/*Task 4*/
+.tm-content-box,
+.tm-main-nav {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tm-banner {
+    padding: 0;
+    border: var(--lightgrey) solid 30px;
+}
+
+/*Task 5*/
+section::before {
+    content: "";
+    border-top: 50px solid var(--lightblue);
+    border-right: 250px solid transparent;
+
+    width: 0;
+    height: 0;
+}
+
+/*Task 6*/
+.carousel .active .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+/*Task 7*/
+h2 + p {
+    font-style: italic;
+}
+
+/*Task 8*/
+p:not(.tm-banner-text) {
+    line-height: 200%;
+    text-indent: 30px;
+}
+
+/*Task 9*/
+ol li a {
+    color: black;
+}
+
+ol li a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+ol li a:hover {
+    color: var(--lightblue);
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+ol li .text::after {
+    content: "new";
+    color: red;
+    vertical-align: super;
+}
+
+/*Task 10*/
+.blocks .box-work {
+    padding: 10px;
+}
+
+.blocks .box-work p {
+    text-indent: 0;
+}
+
+.box-work p::first-letter {
+    color: black;
+}
+
+.blocks .box-work:nth-child(even) {
+    background-color: var(--lightgrey);
+}
+
+/*Task 11*/
+.tm-content-box .mandatory-field::after {
+    content: " *";
+    font-weight: bold;
+    color: #e32;
+}
+
+.submit-btn {
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+
+    color: var(--lightblue);
+
+    background-color: white;
+    border-radius: 0;
+    border: var(--lightblue) solid 1px;
+}
+
+.submit-btn:hover {
+    color: white;
+    background-color: var(--lightblue);
+    border: none;
+}
+
+/*Task 12*/
+.tm-nav-item:hover {
+    background-color: var(--lightgrey);
+}
+
+/*Task 1*/
+/*TODO*/
+@media print {
+    #about,
+    #ideas,
+    #contact,
+    .tm-sidebar,
+    .blocks,
+    .heading,
+    .img-contact-us,
+    section::before {
+        display: none;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .container .tm-section-title {
+        color: blue;
+    }
+
+    .container img[src="img/epam-mexico.jpg"] {
+        width: 300px;
+    }
+
+    p {
+        text-indent: 30px;
+    }
+
+    p::first-letter {
+        color: darkgrey;
+        font-size: 30px;
+    }
+
+    h2 + p {
+        font-style: italic;
+    }
+
+    .tm-banner {
+        padding: 30px;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
