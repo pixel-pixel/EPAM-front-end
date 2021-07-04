@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+
+  background-color: #F4F4F4;
+
+  --block-padding: 50px;
+  --img-height: 500px;
+  --blue-color: #76cdd8;
+  --gray-color: #797979;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 20px auto;
+
+  background-color: white;
+
+  -webkit-box-sizing: border-box;
+}
+
+.block {
+  width: 550px;
+  height: 350px;
+
+  color: var(--gray-color);
+
+  background-color: white;
+  -webkit-box-sizing: border-box;
+}
+
+.block_hover:hover {
+  color: var(--blue-color);
+}
+
+.block_hover:hover::after {
+  content: "";
+  border-left: 50px solid transparent;
+  border-top: 50px solid var(--blue-color);
+}
+
+.title {
+  color: var(--blue-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text {
+  line-height: 30px;
+}
+
+.button {
+  width: 175px;
+  height: 50px;
+
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+
+
+  background-color: #019999;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(118, 205, 216)
+}
+
+.img_scale:hover {
+  position: relative;
+  width: 110%;
+  height: 110%;
+}
+
+.about__epam-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+
+  background-color: var(--blue-color);
+}
+
+.epam-block__title {
+  color: white;
+}
+
+.about__we-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--block-padding);
+  font-style: italic;
+}
+
+.about__learn-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 var(--block-padding);
+}
+
+.about__games-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  background-color: var(--blue-color);
+}
+
+.games-block__img {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+}
+
+.pay__img {
+  width: 100%;
+  height: 100%;
+}
+
+.about__secure-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--block-padding);
+}
+
+.read-more {
+  flex-wrap: nowrap;
+}
+
+.read-more__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--block-padding);
+}
+
+.read-more__button {
+  align-self: flex-end;
+}
+
+.read-more__img-container {
+  height: var(--img-height);
+}
+
+.read-more__img {
+  height: 100%;
+}
+
+.plans-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plans__img {
+  width: 33%;
+}
+
+.plan {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+
+  outline: #019999 1px solid;
+  -webkit-box-sizing: border-box;
+}
+
+.plan__head {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  background-color: #019999;
+}
+
+.plan__title,
+.plan__text {
+  color: white;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.plan__u-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form_header{
+  display: block;
+  width: auto;
+  height: max-content;
+  background-color: #1dd5d5;
+  padding: 50px 300px;
+  color: white;
+}
+.form__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 350px;
+}
+.form_block{
+  display: flex;
+  background-color: white;
+  padding: 40px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  box-sizing: border-box;
+  margin: 5px 10px;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+input::placeholder,
+textarea::placeholder{
+  color: black;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+textarea:focus,
+input:focus,
+select:focus{
+  border-color: #24d4d4;
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+table{
+  padding: 10px;
+  margin: 10px;
+}
+table tr td{
+  padding: 10px;
+}
+textarea{
+  height: 200px;
+}
+.form_footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 180px;
+  background-color: rgb(1,153,153) ;
+  color: white;
+  padding-top: 50px;
+}
+.text_block{
+  display: flex;
+  margin: 40px;
+  line-height: 0.8;
+}
+

@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #f2c744;
+  --light: #f4f6f9;
+  --dark: #000;
+  --primary-font: 'Shadows Into Light', cursive;
+  --secondary-font: 'Dancing Script', cursive;
+}
+
+.text {
+  font-family: var(--primary-font);
+}
+
+.title {
+  font-family: var(--secondary-font);
+}
+
+.card {
+  padding: 10px;
+
+  background-color: var(--light);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+      "head head"
+      "gal bio"
+      "foot foot";
+
+  text-align: center;
+
+  background-color: var(--light);
+}
+
+.top-bar {
+  grid-area: head;
+}
+.top-bar__logo {
+  width: 100px;
+}
+
+.gallery {
+  grid-area: gal;
+}
+.gallery__photos {
+  width: 100%;
+}
+
+.bio {
+  grid-area: bio;
+  height: 50%;
+  position: sticky;
+  top: 10px;
+}
+.bio__avatar {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+}
+.bio_link {
+  color: black;
+  text-decoration: none;
+}
+
+.btm-bar {
+  grid-area: foot;
+}
+.btm-bar__logo{
+  width: 50px;
+}

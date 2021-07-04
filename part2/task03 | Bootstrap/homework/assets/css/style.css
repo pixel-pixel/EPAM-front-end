@@ -1,0 +1,113 @@
+﻿* {
+  outline: none;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.bg-image{
+  background: url("../img/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 470px;
+}
+.navbar-brand{
+  font-size: 30px;
+}
+.card > img{
+  height: 160px;
+  width: 160px;
+  margin: 0 auto;
+}
+.card-text{
+  font-weight:100;
+  font-size: 14px;
+}
+.title{
+  font-size: 24px;
+  font-weight: 100;
+}
+.btn-lg{
+  background-image: linear-gradient(to top, rgb(74,80,168) 0% ,rgb(93,64,125) 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: white;
+  padding: 5px 50px;
+  margin: 0 auto;
+}
+.bg-light-grey{
+  background-color: #ebebeb;
+}
+.img-first{
+  height: 250px;
+  width: 250px;
+  top:0;
+  right: 0;
+}
+.img-bg {
+  height: 200px;
+  width: 200px;
+  bottom: -5px;
+  z-index: -1;
+  left: -60px;
+  position: absolute;
+}
+.crd{
+  width: 300px;
+  height: 300px;
+}
+.card{
+  z-index: -100;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 20%;
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 0.5%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.form-group{
+  border-top: white;
+}
+.form-control::placeholder{
+  color: white;
+  font-weight: 100;
+}
+.bg-dark-black{
+  background-color: black;
+}
+.form-group > button{
+  padding: 10px 80px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #202020;
+  font-weight: 100;
+}
+.bg-footer{
+  background: url("../img/footer-bg.jpg") no-repeat center;
+  background-size: auto;
+  margin: 0 auto;
+}
+.line-height{
+  line-height: 0.6;
+}
+.all-right{
+  font-weight: 100;
+  font-size: 14px;
+}
+.footer{
+  margin-top: -50px;
+}
